@@ -174,7 +174,7 @@ function SubmitResults() {
 
 function gameTime() {
     _gameTimeNum--;
-    if (_gameTimeNum <= 0) {
+    if (_gameTimeNum <= -20) {
         GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
         gameOver();
         GameLayerBG.className += ' flash';
@@ -314,7 +314,7 @@ function showGameScoreLayer() {
             cookie('bast-score', bast, 100);
         }
     }
-    document.getElementById('GameScoreLayer-bast').innerHTML = '最佳&nbsp;&nbsp;' + bast;
+    document.getElementById('GameScoreLayer-bast').innerHTML = '最强的时候&nbsp;&nbsp;' + bast;
     l.style.display = 'block';
 }
 
